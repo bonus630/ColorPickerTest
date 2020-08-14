@@ -1,0 +1,22 @@
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\bin\Debug\AppUI.xslt
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\bin\Debug\UserUI.xslt
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\bin\Debug\CorelDrw.addon
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\bin\Debug\ColorPickerTest.dll
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\bin\Debug\ColorPickerTest.pdb
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ColorPickerTest.csprojAssemblyReference.cache
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\Styles\Colors.baml
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\Styles\Styles.baml
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ControlUI.g.cs
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ColorPickerTest_MarkupCompile.cache
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ColorPickerTest_MarkupCompile.lref
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ControlUI.baml
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\Resources\Images.baml
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ColorPickerTest.g.resources
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ColorPickerTest.Properties.Resources.resources
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ColorPickerTest.csproj.GenerateResource.cache
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ColorPickerTest.csproj.CoreCompileInputs.cache
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ColorPickerTest.dll
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ColorPickerTest.pdb
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ColorPicker.g.cs
+C:\Users\bonus\source\repos\ColorPickerTest\ColorPickerTest\obj\X8 Debug\ColorPicker.baml
