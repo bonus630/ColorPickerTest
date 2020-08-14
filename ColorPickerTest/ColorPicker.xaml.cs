@@ -1,19 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Runtime.CompilerServices;
-using System.Windows.Media.TextFormatting;
+using System.Windows;
+using System.Windows.Input;
 
 namespace ColorPickerTest
 {
@@ -31,7 +20,18 @@ namespace ColorPickerTest
             btn_ok.Click += (s, e) => { this.DialogResult = true; };
         }
         public ColorSystem SelectedColor { get { return colorManager.SelectedColor; } }
-
+        protected override void OnDeactivated(EventArgs e)
+        {
+            try
+            {
+                this.Close();
+            }
+            catch { }
+        }
+        protected override void OnLostFocus(RoutedEventArgs e)
+        {
+           this.Close();
+        }
     }
 
 }
@@ -83,6 +83,7 @@ public class ColorManager : INotifyPropertyChanged
             NotifyPropertyChanged();
         }
     }
+    public string PaletteName { get; set; }
     private void SetSelectedColor(ColorSystem color)
     {
         SelectedColor = color;
@@ -91,6 +92,7 @@ public class ColorManager : INotifyPropertyChanged
     {
         if (palette == null)
             return;
+        PaletteName = palette.Name;
         colorArray = new ColorSystem[palette.ColorCount];
         for (int i = 1; i < palette.ColorCount; i++)
         {

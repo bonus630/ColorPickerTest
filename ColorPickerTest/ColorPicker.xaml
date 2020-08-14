@@ -5,14 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ColorPickerTest"
              mc:Ignorable="d" 
-             Height="400" Width="160" ResizeMode="NoResize" ShowInTaskbar="False" WindowStyle="None">
+             Height="400" Width="166" ResizeMode="NoResize" ShowInTaskbar="False" WindowStyle="None">
+    <Border BorderBrush="#FF535050" BorderThickness="1" Padding="2">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-
-        <ItemsControl  Name="Colors" Grid.Row="0" ItemsSource="{Binding ColorArray}">
+        <Label Content="{Binding PaletteName}" Grid.Row="0"/>
+        <ItemsControl  Name="Colors" Grid.Row="1" ItemsSource="{Binding ColorArray}">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>
@@ -23,16 +25,22 @@
                     <Button Background="{Binding ColorHexValue}" Width="20" Height="20" 
                                 CommandParameter="{Binding}" Command="{Binding Path=DataContext.ColorSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ItemsControl}}">
                         <Button.ToolTip>
-                            <ToolTip Content="{Binding CorelColorName}" />
+                            <ToolTip>
+                                <StackPanel>
+                                    <Label  Content="{Binding CorelColorName}" FontSize="14" FontWeight="Bold" />
+                                    <Label Content="{Binding ColorHexValue}" FontSize="12" />
+                                </StackPanel>
+                            </ToolTip>
                         </Button.ToolTip>
                     </Button>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
-        <StackPanel Grid.Row="1" Orientation="Horizontal">
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
             <Rectangle Fill="{Binding SelectedColor.ColorHexValue}" Width="20" Height="20" HorizontalAlignment="Left" Margin="2,0,0,0"/>
-            <Button Content="Ok" IsDefault="True" Name="btn_ok" Width="30" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="20,0,0,0"/>
+            <Button Content="Ok" IsDefault="True" Name="btn_ok" Width="60" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="8,0,0,0"/>
             <Button Content="Cancel" IsCancel="True" Name="btn_cancel" Width="60" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="8,0,0,0"/>
         </StackPanel>       
     </Grid>
+    </Border>
 </Window>
